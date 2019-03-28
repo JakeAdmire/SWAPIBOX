@@ -7,7 +7,7 @@ import { Header } from '../../components/Header/Header';
 export class App extends Component {
   constructor() {
     super();
-    this.state = { film: {} };
+    this.state = { film: {}, faves: [] };
   }
 
   componentDidMount() {
@@ -30,10 +30,10 @@ export class App extends Component {
   render() {
     const { crawl, title, date, episode } = this.state.film;
     const crawlContent = { crawl, title, date };
-    console.log(crawl);
+    console.log(this.state.faves.length);
     return (
       <div className="App">
-        <Header />
+        <Header faves={this.state.faves.length}/>
         <Crawl {...crawlContent}/>
       </div>
     );
