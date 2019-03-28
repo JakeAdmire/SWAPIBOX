@@ -11,3 +11,14 @@ describe('chooseFilm', () => {
   })
 
 })
+
+describe('addFavorite', () => {
+
+  it('should return an object with type of "ADD_FAVORITE"', () => {
+    const film = {};
+    const expected = { type: 'ADD_FAVORITE', film};
+    const results = addFavorite(film);
+    expect(results).toEqual(expected);
+  })
+
+})
