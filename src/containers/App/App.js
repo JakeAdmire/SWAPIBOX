@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import { fetchHappens } from '../../helpers/fetch';
 import { Crawl } from '../../components/Crawl/Crawl';
+import { Header } from '../../components/Header/Header';
 
 export class App extends Component {
   constructor() {
@@ -32,6 +33,7 @@ export class App extends Component {
     console.log(crawl);
     return (
       <div className="App">
+        <Header />
         <Crawl {...crawlContent}/>
       </div>
     );
