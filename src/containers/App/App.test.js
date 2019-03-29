@@ -1,9 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import { enzyme, shallow } from 'enzyme';
+import React from 'react'
+import { App } from './App';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
-});
+describe('App', () => {
+
+  let wrapper;
+
+  let mockProps = {
+    film: {
+      crawl: 'Once upon a time', 
+      title: 'Movie1', 
+      date: '3-28-2019'
+    },
+    faves: [],
+  };
+
+  wrapper = shallow(
+    <App {...mockProps}/>
+  )
+
+  it('should match the snapshot', () => {
+    expect(wrapper).toMatchSnapshot();
+  }) 
+
+})
