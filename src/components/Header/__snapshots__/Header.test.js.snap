@@ -1,0 +1,270 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Header
+    faves={0}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h1>
+          Swapi-Box
+        </h1>,
+        <div
+          className="button-holder"
+        >
+          <button>
+            People
+          </button>
+          <button>
+            Planets
+          </button>
+          <button>
+            Vehicles
+          </button>
+          <button>
+            Faves(0)
+          </button>
+        </div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Swapi-Box",
+        },
+        "ref": null,
+        "rendered": "Swapi-Box",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <button>
+              People
+            </button>,
+            <button>
+              Planets
+            </button>,
+            <button>
+              Vehicles
+            </button>,
+            <button>
+              Faves(0)
+            </button>,
+          ],
+          "className": "button-holder",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "People",
+            },
+            "ref": null,
+            "rendered": "People",
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Planets",
+            },
+            "ref": null,
+            "rendered": "Planets",
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Vehicles",
+            },
+            "ref": null,
+            "rendered": "Vehicles",
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Faves(0)",
+            },
+            "ref": null,
+            "rendered": "Faves(0)",
+            "type": "button",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1>
+            Swapi-Box
+          </h1>,
+          <div
+            className="button-holder"
+          >
+            <button>
+              People
+            </button>
+            <button>
+              Planets
+            </button>
+            <button>
+              Vehicles
+            </button>
+            <button>
+              Faves(0)
+            </button>
+          </div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Swapi-Box",
+          },
+          "ref": null,
+          "rendered": "Swapi-Box",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <button>
+                People
+              </button>,
+              <button>
+                Planets
+              </button>,
+              <button>
+                Vehicles
+              </button>,
+              <button>
+                Faves(0)
+              </button>,
+            ],
+            "className": "button-holder",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "People",
+              },
+              "ref": null,
+              "rendered": "People",
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Planets",
+              },
+              "ref": null,
+              "rendered": "Planets",
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Vehicles",
+              },
+              "ref": null,
+              "rendered": "Vehicles",
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Faves(0)",
+              },
+              "ref": null,
+              "rendered": "Faves(0)",
+              "type": "button",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
