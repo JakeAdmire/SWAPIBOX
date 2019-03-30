@@ -30,3 +30,18 @@ describe('mapStateToProps', () => {
   })
 
 })
+
+describe('mapDispatchToProps', () => {
+
+  it('should provide a method to dispatch an action creator', () => {
+    const mockCategory = 'people';
+    const mockDispatch = jest.fn();
+    const actionToDispatch = setCategory(mockCategory);
+    const mappedProps = mapDispatchToProps(mockDispatch);
+
+    mappedProps.setCategory(mockCategory);
+
+    expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch);
+  })
+
+})
