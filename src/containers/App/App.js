@@ -27,7 +27,9 @@ export class App extends Component {
       <div className="App">
         <Header />
         <Crawl {...crawlContent}/>
-        { this.props.category && <Main /> }
+        <Route path='/:id' render={ 
+          ({match}) => match.params.id && <Main />
+        }/>
       </div>
     );
   }

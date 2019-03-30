@@ -1,6 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
+
 import { setCategory } from '../../actions';
+import { Button } from '../Button/Button';
 
 export function Header(props) {
   let faves = `Faves(${props.faves.length})`;
@@ -10,14 +13,18 @@ export function Header(props) {
     props.setCategory(innerText);
   }
 
+  const generateButtons = () => {
+    const buttons = ['People', 'Planets', 'Vehicles'];
+    return buttons.map(button => 
+      <Button key={button} button={button} passEvent={passEvent} />
+    )
+  }
+
   return (
     <div>
       <h1>Swapi-Box</h1>
       <div className="button-holder">
-        <button className="people" onClick={ passEvent }>People</button>
-        <button className="planets" onClick={ passEvent }>Planets</button>
-        <button className="vehicles" onClick={ passEvent }>Vehicles</button>
-        <button>{faves}</button>
+        { generateButtons() }
       </div>
     </div>
   )
