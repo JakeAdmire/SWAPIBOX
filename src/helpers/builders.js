@@ -26,3 +26,49 @@ export const peopleCreator = (info) => {
     </div>
   )
 }
+
+export const planetsGatherer = (planet) => {
+  return {
+    name: planet.name, 
+    terrain: planet.terrain,
+    population: planet.population,
+    climate: planet.climate,
+    residents: planet.residents.length,
+    category: 'planets'
+  };
+}
+
+export const planetsCreator = (info) => {
+  const { name, terrain, population, climate, residents } = info;
+  return (
+    <div className="planet card">
+      <h3>Name: {name}</h3>
+      <p>Terrain: {terrain}</p>
+      <p>Population: {population}</p>
+      <p>Climate: {climate}</p>
+      <p>Residents: {residents}</p>
+    </div>
+  )
+}
+
+export const vehiclesGatherer = (vehicle) => {
+  return {
+    name: vehicle.name,
+    model: vehicle.model,
+    vehicleClass: vehicle.vehicle_class,
+    passengers: vehicle.passengers,
+    category: 'vehicles'
+  };
+}
+
+export const vehiclesCreator = (info) => {
+  const { name, model, vehicleClass, passengers } = info;
+  return (
+    <div className="planet card">
+      <h3>Name: {name}</h3>
+      <p>Model: {model}</p>
+      <p>Class: {vehicleClass}</p>
+      <p>Passengers: {passengers}</p>
+    </div>
+  )
+}
