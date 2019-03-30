@@ -5,7 +5,9 @@ import {
   peopleGatherer, 
   peopleCreator,
   planetsGatherer,
-  planetsCreator 
+  planetsCreator,
+  vehiclesGatherer,
+  vehiclesCreator 
 } from './builders';
 
 import { fetchHappens } from './fetch';
@@ -115,6 +117,23 @@ describe('builders', () => {
       expect(results).toEqual(expected);
     })
 
+  })
+
+  describe('vehiclesCreator', () => {
+
+    let mockInfo = {
+      model: "Digger Crawler",
+      name: "Sand Crawler",
+      passengers: "30",
+      vehicleClass: "wheeled"
+    }
+
+    let wrapper = shallow( vehiclesCreator(mockInfo) );
+
+    it('should match the snapshot', () => {
+      expect(wrapper).toMatchSnapshot();
+    }) 
+    
   })
   
 })

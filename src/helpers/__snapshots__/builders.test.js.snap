@@ -301,3 +301,259 @@ ShallowWrapper {
   },
 }
 `;
+
+exports[`builders vehiclesCreator should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <div
+    className="planet card"
+  >
+    <h3>
+      Name: 
+      Sand Crawler
+    </h3>
+    <p>
+      Model: 
+      Digger Crawler
+    </p>
+    <p>
+      Class: 
+      wheeled
+    </p>
+    <p>
+      Passengers: 
+      30
+    </p>
+  </div>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h3>
+          Name: 
+          Sand Crawler
+        </h3>,
+        <p>
+          Model: 
+          Digger Crawler
+        </p>,
+        <p>
+          Class: 
+          wheeled
+        </p>,
+        <p>
+          Passengers: 
+          30
+        </p>,
+      ],
+      "className": "planet card",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Name: ",
+            "Sand Crawler",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Name: ",
+          "Sand Crawler",
+        ],
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Model: ",
+            "Digger Crawler",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Model: ",
+          "Digger Crawler",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Class: ",
+            "wheeled",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Class: ",
+          "wheeled",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Passengers: ",
+            "30",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Passengers: ",
+          "30",
+        ],
+        "type": "p",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h3>
+            Name: 
+            Sand Crawler
+          </h3>,
+          <p>
+            Model: 
+            Digger Crawler
+          </p>,
+          <p>
+            Class: 
+            wheeled
+          </p>,
+          <p>
+            Passengers: 
+            30
+          </p>,
+        ],
+        "className": "planet card",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Name: ",
+              "Sand Crawler",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Name: ",
+            "Sand Crawler",
+          ],
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Model: ",
+              "Digger Crawler",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Model: ",
+            "Digger Crawler",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Class: ",
+              "wheeled",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Class: ",
+            "wheeled",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Passengers: ",
+              "30",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Passengers: ",
+            "30",
+          ],
+          "type": "p",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
