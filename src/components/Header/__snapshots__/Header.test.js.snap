@@ -5,6 +5,7 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Header
     faves={0}
+    setCategory={[MockFunction]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -28,16 +29,19 @@ ShallowWrapper {
           className="button-holder"
         >
           <button
+            className="people"
             onClick={[Function]}
           >
             People
           </button>
           <button
+            className="planets"
             onClick={[Function]}
           >
             Planets
           </button>
           <button
+            className="vehicles"
             onClick={[Function]}
           >
             Vehicles
@@ -68,16 +72,19 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <button
+              className="people"
               onClick={[Function]}
             >
               People
             </button>,
             <button
+              className="planets"
               onClick={[Function]}
             >
               Planets
             </button>,
             <button
+              className="vehicles"
               onClick={[Function]}
             >
               Vehicles
@@ -96,6 +103,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "People",
+              "className": "people",
               "onClick": [Function],
             },
             "ref": null,
@@ -108,6 +116,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "Planets",
+              "className": "planets",
               "onClick": [Function],
             },
             "ref": null,
@@ -120,6 +129,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "Vehicles",
+              "className": "vehicles",
               "onClick": [Function],
             },
             "ref": null,
@@ -157,16 +167,19 @@ ShallowWrapper {
             className="button-holder"
           >
             <button
+              className="people"
               onClick={[Function]}
             >
               People
             </button>
             <button
+              className="planets"
               onClick={[Function]}
             >
               Planets
             </button>
             <button
+              className="vehicles"
               onClick={[Function]}
             >
               Vehicles
@@ -197,16 +210,19 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <button
+                className="people"
                 onClick={[Function]}
               >
                 People
               </button>,
               <button
+                className="planets"
                 onClick={[Function]}
               >
                 Planets
               </button>,
               <button
+                className="vehicles"
                 onClick={[Function]}
               >
                 Vehicles
@@ -225,6 +241,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "People",
+                "className": "people",
                 "onClick": [Function],
               },
               "ref": null,
@@ -237,6 +254,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "Planets",
+                "className": "planets",
                 "onClick": [Function],
               },
               "ref": null,
@@ -249,6 +267,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "Vehicles",
+                "className": "vehicles",
                 "onClick": [Function],
               },
               "ref": null,

@@ -14,9 +14,9 @@ export function Header(props) {
     <div>
       <h1>Swapi-Box</h1>
       <div className="button-holder">
-        <button onClick={ passEvent }>People</button>
-        <button onClick={ passEvent }>Planets</button>
-        <button onClick={ passEvent }>Vehicles</button>
+        <button className="people" onClick={ passEvent }>People</button>
+        <button className="planets" onClick={ passEvent }>Planets</button>
+        <button className="vehicles" onClick={ passEvent }>Vehicles</button>
         <button>{faves}</button>
       </div>
     </div>
