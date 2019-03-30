@@ -36,8 +36,7 @@ export class App extends Component {
 }
 
 export const mapStateToProps = (state) => ({
-  film: state.film,
-  category: state.category
+  film: state.film
 })
 
 export const mapDispatchToProps = (dispatch) => ({

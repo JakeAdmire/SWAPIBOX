@@ -29,6 +29,7 @@ export class Main extends Component {
 
   determineCards = async (results) => {
     const cat = this.props.category.toLowerCase();
+    console.log(cat);
     const cardArray = await Promise.all(
       results.map(result => builders[`${cat}Gatherer`](result))
     )
