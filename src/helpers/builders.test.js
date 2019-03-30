@@ -1,7 +1,13 @@
 import { enzyme, shallow } from 'enzyme';
 import React from 'react'
 
-import { peopleGatherer, peopleCreator } from './builders';
+import { 
+  peopleGatherer, 
+  peopleCreator,
+  planetsGatherer,
+  planetsCreator 
+} from './builders';
+
 import { fetchHappens } from './fetch';
 
 describe('builders', () => {
@@ -51,16 +57,17 @@ describe('builders', () => {
 
   })
 
-  describe('peopleCreator', () => {
+  describe('planetsCreator', () => {
 
     let mockInfo = { 
-      name: 'Bob',
-      species: 'human',
-      homeworld: 'Earth',
-      population: 100000 
+      name: 'Earth',
+      terrain: 'bumpy',
+      population: 10000,
+      climate: 'hot',
+      residents: 3 
     };
 
-    let wrapper = shallow( peopleCreator(mockInfo) );
+    let wrapper = shallow( planetsCreator(mockInfo) );
 
     it('should match the snapshot', () => {
       expect(wrapper).toMatchSnapshot();

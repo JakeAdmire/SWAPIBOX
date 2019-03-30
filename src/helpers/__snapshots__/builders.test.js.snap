@@ -1,26 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`builders peopleCreator should match the snapshot 1`] = `
+exports[`builders planetsCreator should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <div
-    className="person card"
+    className="planet card"
   >
     <h3>
       Name: 
-      Bob
+      Earth
     </h3>
     <p>
-      Species: 
-      human
+      Terrain: 
+      bumpy
     </p>
     <p>
-      Homeworld: 
-      Earth
+      Population: 
+      10000
     </p>
     <p>
-      Planet population: 
-      100000
+      Climate: 
+      hot
+    </p>
+    <p>
+      Residents: 
+      3
     </p>
   </div>,
   Symbol(enzyme.__renderer__): Object {
@@ -40,22 +44,26 @@ ShallowWrapper {
       "children": Array [
         <h3>
           Name: 
-          Bob
+          Earth
         </h3>,
         <p>
-          Species: 
-          human
+          Terrain: 
+          bumpy
         </p>,
         <p>
-          Homeworld: 
-          Earth
+          Population: 
+          10000
         </p>,
         <p>
-          Planet population: 
-          100000
+          Climate: 
+          hot
+        </p>,
+        <p>
+          Residents: 
+          3
         </p>,
       ],
-      "className": "person card",
+      "className": "planet card",
     },
     "ref": null,
     "rendered": Array [
@@ -66,13 +74,13 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             "Name: ",
-            "Bob",
+            "Earth",
           ],
         },
         "ref": null,
         "rendered": Array [
           "Name: ",
-          "Bob",
+          "Earth",
         ],
         "type": "h3",
       },
@@ -82,14 +90,14 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            "Species: ",
-            "human",
+            "Terrain: ",
+            "bumpy",
           ],
         },
         "ref": null,
         "rendered": Array [
-          "Species: ",
-          "human",
+          "Terrain: ",
+          "bumpy",
         ],
         "type": "p",
       },
@@ -99,14 +107,14 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            "Homeworld: ",
-            "Earth",
+            "Population: ",
+            10000,
           ],
         },
         "ref": null,
         "rendered": Array [
-          "Homeworld: ",
-          "Earth",
+          "Population: ",
+          10000,
         ],
         "type": "p",
       },
@@ -116,14 +124,31 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            "Planet population: ",
-            100000,
+            "Climate: ",
+            "hot",
           ],
         },
         "ref": null,
         "rendered": Array [
-          "Planet population: ",
-          100000,
+          "Climate: ",
+          "hot",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Residents: ",
+            3,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Residents: ",
+          3,
         ],
         "type": "p",
       },
@@ -139,22 +164,26 @@ ShallowWrapper {
         "children": Array [
           <h3>
             Name: 
-            Bob
+            Earth
           </h3>,
           <p>
-            Species: 
-            human
+            Terrain: 
+            bumpy
           </p>,
           <p>
-            Homeworld: 
-            Earth
+            Population: 
+            10000
           </p>,
           <p>
-            Planet population: 
-            100000
+            Climate: 
+            hot
+          </p>,
+          <p>
+            Residents: 
+            3
           </p>,
         ],
-        "className": "person card",
+        "className": "planet card",
       },
       "ref": null,
       "rendered": Array [
@@ -165,13 +194,13 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               "Name: ",
-              "Bob",
+              "Earth",
             ],
           },
           "ref": null,
           "rendered": Array [
             "Name: ",
-            "Bob",
+            "Earth",
           ],
           "type": "h3",
         },
@@ -181,14 +210,14 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "Species: ",
-              "human",
+              "Terrain: ",
+              "bumpy",
             ],
           },
           "ref": null,
           "rendered": Array [
-            "Species: ",
-            "human",
+            "Terrain: ",
+            "bumpy",
           ],
           "type": "p",
         },
@@ -198,14 +227,14 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "Homeworld: ",
-              "Earth",
+              "Population: ",
+              10000,
             ],
           },
           "ref": null,
           "rendered": Array [
-            "Homeworld: ",
-            "Earth",
+            "Population: ",
+            10000,
           ],
           "type": "p",
         },
@@ -215,14 +244,31 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "Planet population: ",
-              100000,
+              "Climate: ",
+              "hot",
             ],
           },
           "ref": null,
           "rendered": Array [
-            "Planet population: ",
-            100000,
+            "Climate: ",
+            "hot",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Residents: ",
+              3,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Residents: ",
+            3,
           ],
           "type": "p",
         },

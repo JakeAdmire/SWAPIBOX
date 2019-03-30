@@ -30,8 +30,7 @@ describe('mapStateToProps', () => {
 
   it('should return a film object and faves array as props', () => {
     const mockState = {
-      film: {},
-      category: 'people'
+      film: {}
     }
 
     const results = mapStateToProps(mockState)
