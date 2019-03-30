@@ -28,27 +28,18 @@ ShallowWrapper {
         <div
           className="button-holder"
         >
-          <button
-            className="people"
-            onClick={[Function]}
-          >
-            People
-          </button>
-          <button
-            className="planets"
-            onClick={[Function]}
-          >
-            Planets
-          </button>
-          <button
-            className="vehicles"
-            onClick={[Function]}
-          >
-            Vehicles
-          </button>
-          <button>
-            Faves(undefined)
-          </button>
+          <Button
+            button="People"
+            passEvent={[Function]}
+          />
+          <Button
+            button="Planets"
+            passEvent={[Function]}
+          />
+          <Button
+            button="Vehicles"
+            passEvent={[Function]}
+          />
         </div>,
       ],
     },
@@ -71,27 +62,18 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <button
-              className="people"
-              onClick={[Function]}
-            >
-              People
-            </button>,
-            <button
-              className="planets"
-              onClick={[Function]}
-            >
-              Planets
-            </button>,
-            <button
-              className="vehicles"
-              onClick={[Function]}
-            >
-              Vehicles
-            </button>,
-            <button>
-              Faves(undefined)
-            </button>,
+            <Button
+              button="People"
+              passEvent={[Function]}
+            />,
+            <Button
+              button="Planets"
+              passEvent={[Function]}
+            />,
+            <Button
+              button="Vehicles"
+              passEvent={[Function]}
+            />,
           ],
           "className": "button-holder",
         },
@@ -99,53 +81,39 @@ ShallowWrapper {
         "rendered": Array [
           Object {
             "instance": null,
-            "key": undefined,
-            "nodeType": "host",
+            "key": "People",
+            "nodeType": "function",
             "props": Object {
-              "children": "People",
-              "className": "people",
-              "onClick": [Function],
+              "button": "People",
+              "passEvent": [Function],
             },
             "ref": null,
-            "rendered": "People",
-            "type": "button",
+            "rendered": null,
+            "type": [Function],
           },
           Object {
             "instance": null,
-            "key": undefined,
-            "nodeType": "host",
+            "key": "Planets",
+            "nodeType": "function",
             "props": Object {
-              "children": "Planets",
-              "className": "planets",
-              "onClick": [Function],
+              "button": "Planets",
+              "passEvent": [Function],
             },
             "ref": null,
-            "rendered": "Planets",
-            "type": "button",
+            "rendered": null,
+            "type": [Function],
           },
           Object {
             "instance": null,
-            "key": undefined,
-            "nodeType": "host",
+            "key": "Vehicles",
+            "nodeType": "function",
             "props": Object {
-              "children": "Vehicles",
-              "className": "vehicles",
-              "onClick": [Function],
+              "button": "Vehicles",
+              "passEvent": [Function],
             },
             "ref": null,
-            "rendered": "Vehicles",
-            "type": "button",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Faves(undefined)",
-            },
-            "ref": null,
-            "rendered": "Faves(undefined)",
-            "type": "button",
+            "rendered": null,
+            "type": [Function],
           },
         ],
         "type": "div",
@@ -166,27 +134,18 @@ ShallowWrapper {
           <div
             className="button-holder"
           >
-            <button
-              className="people"
-              onClick={[Function]}
-            >
-              People
-            </button>
-            <button
-              className="planets"
-              onClick={[Function]}
-            >
-              Planets
-            </button>
-            <button
-              className="vehicles"
-              onClick={[Function]}
-            >
-              Vehicles
-            </button>
-            <button>
-              Faves(undefined)
-            </button>
+            <Button
+              button="People"
+              passEvent={[Function]}
+            />
+            <Button
+              button="Planets"
+              passEvent={[Function]}
+            />
+            <Button
+              button="Vehicles"
+              passEvent={[Function]}
+            />
           </div>,
         ],
       },
@@ -209,27 +168,18 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <button
-                className="people"
-                onClick={[Function]}
-              >
-                People
-              </button>,
-              <button
-                className="planets"
-                onClick={[Function]}
-              >
-                Planets
-              </button>,
-              <button
-                className="vehicles"
-                onClick={[Function]}
-              >
-                Vehicles
-              </button>,
-              <button>
-                Faves(undefined)
-              </button>,
+              <Button
+                button="People"
+                passEvent={[Function]}
+              />,
+              <Button
+                button="Planets"
+                passEvent={[Function]}
+              />,
+              <Button
+                button="Vehicles"
+                passEvent={[Function]}
+              />,
             ],
             "className": "button-holder",
           },
@@ -237,53 +187,39 @@ ShallowWrapper {
           "rendered": Array [
             Object {
               "instance": null,
-              "key": undefined,
-              "nodeType": "host",
+              "key": "People",
+              "nodeType": "function",
               "props": Object {
-                "children": "People",
-                "className": "people",
-                "onClick": [Function],
+                "button": "People",
+                "passEvent": [Function],
               },
               "ref": null,
-              "rendered": "People",
-              "type": "button",
+              "rendered": null,
+              "type": [Function],
             },
             Object {
               "instance": null,
-              "key": undefined,
-              "nodeType": "host",
+              "key": "Planets",
+              "nodeType": "function",
               "props": Object {
-                "children": "Planets",
-                "className": "planets",
-                "onClick": [Function],
+                "button": "Planets",
+                "passEvent": [Function],
               },
               "ref": null,
-              "rendered": "Planets",
-              "type": "button",
+              "rendered": null,
+              "type": [Function],
             },
             Object {
               "instance": null,
-              "key": undefined,
-              "nodeType": "host",
+              "key": "Vehicles",
+              "nodeType": "function",
               "props": Object {
-                "children": "Vehicles",
-                "className": "vehicles",
-                "onClick": [Function],
+                "button": "Vehicles",
+                "passEvent": [Function],
               },
               "ref": null,
-              "rendered": "Vehicles",
-              "type": "button",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Faves(undefined)",
-              },
-              "ref": null,
-              "rendered": "Faves(undefined)",
-              "type": "button",
+              "rendered": null,
+              "type": [Function],
             },
           ],
           "type": "div",

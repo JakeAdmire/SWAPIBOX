@@ -34,7 +34,10 @@ ShallowWrapper {
           date="3-28-2019"
           title="Movie1"
         />,
-        undefined,
+        <Route
+          path="/:id"
+          render={[Function]}
+        />,
       ],
       "className": "App",
     },
@@ -62,7 +65,18 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
-      undefined,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "path": "/:id",
+          "render": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
     ],
     "type": "div",
   },
@@ -79,7 +93,10 @@ ShallowWrapper {
             date="3-28-2019"
             title="Movie1"
           />,
-          undefined,
+          <Route
+            path="/:id"
+            render={[Function]}
+          />,
         ],
         "className": "App",
       },
@@ -107,7 +124,18 @@ ShallowWrapper {
           "rendered": null,
           "type": [Function],
         },
-        undefined,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "path": "/:id",
+            "render": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
       ],
       "type": "div",
     },

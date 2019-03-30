@@ -1,7 +1,15 @@
 import { enzyme, shallow } from 'enzyme';
 import React from 'react'
 
-import { peopleGatherer, peopleCreator } from './builders';
+import { 
+  peopleGatherer, 
+  peopleCreator,
+  planetsGatherer,
+  planetsCreator,
+  vehiclesGatherer,
+  vehiclesCreator 
+} from './builders';
+
 import { fetchHappens } from './fetch';
 
 describe('builders', () => {
@@ -51,21 +59,120 @@ describe('builders', () => {
 
   })
 
-  describe('peopleCreator', () => {
+  describe('planetsCreator', () => {
 
     let mockInfo = { 
-      name: 'Bob',
-      species: 'human',
-      homeworld: 'Earth',
-      population: 100000 
+      name: 'Earth',
+      terrain: 'bumpy',
+      population: 10000,
+      climate: 'hot',
+      residents: 3 
     };
 
-    let wrapper = shallow( peopleCreator(mockInfo) );
+    let wrapper = shallow( planetsCreator(mockInfo) );
 
     it('should match the snapshot', () => {
       expect(wrapper).toMatchSnapshot();
     }) 
     
+  })
+
+  describe('planetsGatherer', () => {
+
+    it('should return the correct data', async () => {
+
+      let mockPlanet = {
+        climate: "temperate",
+        created: "2014-12-10T11:35:48.479000Z",
+        diameter: "12500",
+        edited: "2014-12-20T20:58:18.420000Z",
+        films: [
+          "https://swapi.co/api/films/6/", 
+          "https://swapi.co/api/films/1/"
+          ],
+        gravity: "1 standard",
+        name: "Alderaan",
+        orbital_period: "364",
+        population: 2000000000,
+        residents: [
+          "https://swapi.co/api/people/5/", 
+          "https://swapi.co/api/people/68/", 
+          "https://swapi.co/api/people/81/"
+          ],
+        rotation_period: 24,
+        surface_water: 40,
+        terrain: "grasslands, mountains",
+        url: "https://swapi.co/api/planets/2/" 
+      }
+
+      const results = await planetsGatherer(mockPlanet);
+      const expected = {
+        "category": "planets", 
+        "climate": "temperate", 
+        "name": "Alderaan", 
+        "population": 2000000000, 
+        "residents": 3, 
+        "terrain": "grasslands, mountains"
+      }
+      expect(results).toEqual(expected);
+    })
+
+  })
+
+  describe('vehiclesCreator', () => {
+
+    let mockInfo = {
+      model: "Digger Crawler",
+      name: "Sand Crawler",
+      passengers: "30",
+      vehicleClass: "wheeled"
+    }
+
+    let wrapper = shallow( vehiclesCreator(mockInfo) );
+
+    it('should match the snapshot', () => {
+      expect(wrapper).toMatchSnapshot();
+    }) 
+    
+  })
+
+  describe('vehiclesGatherer', () => {
+
+    it('should return the correct data', async () => {
+
+      let mockVehicle = {
+        cargo_capacity: 50000,
+        consumables: "2 months",
+        cost_in_credits: 150000,
+        created: "2014-12-10T15:36:25.724000Z",
+        crew: 46,
+        edited: "2014-12-22T18:21:15.523587Z",
+        films: [
+          "https://swapi.co/api/films/5/", 
+          "https://swapi.co/api/films/1/"
+          ],
+        length: 36.8,
+        manufacturer: "Corellia Mining Corporation",
+        max_atmosphering_speed: 30,
+        model: "Digger Crawler",
+        name: "Sand Crawler",
+        passengers: 30,
+        pilots: [],
+        url: "https://swapi.co/api/vehicles/4/",
+        vehicle_class: "wheeled"
+      }
+
+      const results = await vehiclesGatherer(mockVehicle);
+      const expected = {
+        "category": "vehicles", 
+        "model": "Digger Crawler", 
+        "name": "Sand Crawler", 
+        "passengers": 30, 
+        "vehicleClass": "wheeled"
+      };
+      expect(results).toEqual(expected);
+    })
+
   })
   
 })
