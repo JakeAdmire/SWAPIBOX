@@ -5,8 +5,8 @@ import { Route } from 'react-router-dom';
 
 import { fetchHappens } from '../../helpers/fetch';
 import { Crawl } from '../../components/Crawl/Crawl';
-import { Header } from '../../components/Header/Header';
-import { Main } from '../../components/Main/Main';
+import Header from '../../components/Header/Header';
+import Main from '../../components/Main/Main';
 
 export class App extends Component {
   constructor(props) {
@@ -16,7 +16,7 @@ export class App extends Component {
 
   componentDidMount() {
     fetchHappens('https://swapi.co/api/films/')
-      .then(films => this.props.chooseFilm(films))
+      .then(films => this.props.chooseFilm(films.results))
       .catch(Error => this.setState({error: Error.message}) )
   }
 
@@ -25,8 +25,9 @@ export class App extends Component {
     const crawlContent = { crawl, title, date };
     return (
       <div className="App">
-        <Header faves={this.props.faves.length}/>
+        <Header />
         <Crawl {...crawlContent}/>
+        { this.props.category && <Main /> }
       </div>
     );
   }
@@ -34,7 +35,7 @@ export class App extends Component {
 
 export const mapStateToProps = (state) => ({
   film: state.film,
-  faves: state.faves
+  category: state.category
 })
 
 export const mapDispatchToProps = (dispatch) => ({
