@@ -3,7 +3,9 @@
 exports[`Main should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Main />,
+  Symbol(enzyme.__unrendered__): <Main
+    category="people"
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "checkPropTypes": [Function],
@@ -18,10 +20,22 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": "MAIN",
+      "children": <p>
+        Loading...
+      </p>,
     },
     "ref": null,
-    "rendered": "MAIN",
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": "Loading...",
+      },
+      "ref": null,
+      "rendered": "Loading...",
+      "type": "p",
+    },
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -30,10 +44,22 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "MAIN",
+        "children": <p>
+          Loading...
+        </p>,
       },
       "ref": null,
-      "rendered": "MAIN",
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Loading...",
+        },
+        "ref": null,
+        "rendered": "Loading...",
+        "type": "p",
+      },
       "type": "div",
     },
   ],
@@ -60,5 +86,6 @@ ShallowWrapper {
       },
     },
   },
+  Symbol(enzyme.__childContext__): null,
 }
 `;
