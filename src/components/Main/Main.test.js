@@ -8,6 +8,7 @@ describe('Main', () => {
   let mockProps = {
     category: 'people'
   }
+  let fetchHappens = jest.fn();
 
   wrapper = shallow(
     <Main {...mockProps}/>
@@ -22,6 +23,11 @@ describe('Main', () => {
       cards: [],
       error: ''
      });
+  })
+
+  it.skip('should call fetchHappens when fetchData is invoked', () => {
+    wrapper.instance().fetchData();
+    expect(fetchHappens).toBeCalled();
   })
 
 })
