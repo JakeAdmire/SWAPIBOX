@@ -16,7 +16,6 @@ export const peopleGatherer = async (person) => {
 }
 
 export const peopleCreator = (info) => {
-  console.log(info);
   const { name, homeworld, species, population } = info;
   return (
     <div className="person card">
@@ -40,7 +39,6 @@ export const planetsGatherer = (planet) => {
 }
 
 export const planetsCreator = (info) => {
-  console.log(info);
   const { name, terrain, population, climate, residents } = info;
   return (
     <div className="planet card">
@@ -49,6 +47,28 @@ export const planetsCreator = (info) => {
       <p>Population: {population}</p>
       <p>Climate: {climate}</p>
       <p>Residents: {residents}</p>
+    </div>
+  )
+}
+
+export const vehiclesGatherer = (vehicle) => {
+  return {
+    name: vehicle.name,
+    model: vehicle.model,
+    vehicleClass: vehicle.vehicle_class,
+    passengers: vehicle.passengers,
+    category: 'vehicles'
+  };
+}
+
+export const vehiclesCreator = (info) => {
+  const { name, model, vehicleClass, passengers } = info;
+  return (
+    <div className="planet card">
+      <h3>Name: {name}</h3>
+      <p>Model: {model}</p>
+      <p>Class: {vehicleClass}</p>
+      <p>Passengers: {passengers}</p>
     </div>
   )
 }
