@@ -27,17 +27,23 @@ ShallowWrapper {
         <div
           className="button-holder"
         >
-          <button>
+          <button
+            onClick={[Function]}
+          >
             People
           </button>
-          <button>
+          <button
+            onClick={[Function]}
+          >
             Planets
           </button>
-          <button>
+          <button
+            onClick={[Function]}
+          >
             Vehicles
           </button>
           <button>
-            Faves(0)
+            Faves(undefined)
           </button>
         </div>,
       ],
@@ -61,17 +67,23 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <button>
+            <button
+              onClick={[Function]}
+            >
               People
             </button>,
-            <button>
+            <button
+              onClick={[Function]}
+            >
               Planets
             </button>,
-            <button>
+            <button
+              onClick={[Function]}
+            >
               Vehicles
             </button>,
             <button>
-              Faves(0)
+              Faves(undefined)
             </button>,
           ],
           "className": "button-holder",
@@ -84,6 +96,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "People",
+              "onClick": [Function],
             },
             "ref": null,
             "rendered": "People",
@@ -95,6 +108,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "Planets",
+              "onClick": [Function],
             },
             "ref": null,
             "rendered": "Planets",
@@ -106,6 +120,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "Vehicles",
+              "onClick": [Function],
             },
             "ref": null,
             "rendered": "Vehicles",
@@ -116,10 +131,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Faves(0)",
+              "children": "Faves(undefined)",
             },
             "ref": null,
-            "rendered": "Faves(0)",
+            "rendered": "Faves(undefined)",
             "type": "button",
           },
         ],
@@ -141,17 +156,23 @@ ShallowWrapper {
           <div
             className="button-holder"
           >
-            <button>
+            <button
+              onClick={[Function]}
+            >
               People
             </button>
-            <button>
+            <button
+              onClick={[Function]}
+            >
               Planets
             </button>
-            <button>
+            <button
+              onClick={[Function]}
+            >
               Vehicles
             </button>
             <button>
-              Faves(0)
+              Faves(undefined)
             </button>
           </div>,
         ],
@@ -175,17 +196,23 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <button>
+              <button
+                onClick={[Function]}
+              >
                 People
               </button>,
-              <button>
+              <button
+                onClick={[Function]}
+              >
                 Planets
               </button>,
-              <button>
+              <button
+                onClick={[Function]}
+              >
                 Vehicles
               </button>,
               <button>
-                Faves(0)
+                Faves(undefined)
               </button>,
             ],
             "className": "button-holder",
@@ -198,6 +225,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "People",
+                "onClick": [Function],
               },
               "ref": null,
               "rendered": "People",
@@ -209,6 +237,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "Planets",
+                "onClick": [Function],
               },
               "ref": null,
               "rendered": "Planets",
@@ -220,6 +249,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "Vehicles",
+                "onClick": [Function],
               },
               "ref": null,
               "rendered": "Vehicles",
@@ -230,10 +260,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Faves(0)",
+                "children": "Faves(undefined)",
               },
               "ref": null,
-              "rendered": "Faves(0)",
+              "rendered": "Faves(undefined)",
               "type": "button",
             },
           ],

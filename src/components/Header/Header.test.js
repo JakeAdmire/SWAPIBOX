@@ -1,6 +1,8 @@
 import { enzyme, shallow } from 'enzyme';
 import React from 'react'
-import { Header } from './Header';
+
+import { Header, mapStateToProps, mapDispatchToProps } from './Header';
+import { setCategory } from '../../actions';
 
 describe('Header', () => {
 
@@ -13,5 +15,18 @@ describe('Header', () => {
   it('should match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   }) 
+
+})
+
+describe('mapStateToProps', () => {
+
+  it('should return a faves array as props', () => {
+    const mockState = {
+      faves: []
+    }
+
+    const results = mapStateToProps(mockState)
+    expect(results).toEqual(mockState)
+  })
 
 })
