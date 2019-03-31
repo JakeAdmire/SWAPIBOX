@@ -10,7 +10,8 @@ export function Header(props) {
 
   const passEvent = (e) => {
     const { innerText } = e.target;
-    props.setCategory(innerText);
+    props.changeState({category: innerText.toLowerCase()});
+    props.changeState({renderCards: true});
   }
 
   const generateButtons = () => {
