@@ -14,7 +14,7 @@ export class Main extends Component {
     }
   }
 
-  test = async () => {
+  renderCards = async () => {
     let data = await this.fetchData();
     data.results && this.determineCards(data.results);
     data.message && this.setState({error: data.message});
@@ -38,7 +38,7 @@ export class Main extends Component {
 
   render() {
     const { cards, error } = this.state;
-    this.props.renderCards && this.test();
+    this.props.renderCards && this.renderCards();
     return (
       <div>
         {
