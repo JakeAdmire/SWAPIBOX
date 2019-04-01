@@ -24,6 +24,7 @@ ShallowWrapper {
       "children": Array [
         <button
           className="fave-button"
+          onClick={[Function]}
         >
           FAVE
         </button>,
@@ -54,6 +55,7 @@ ShallowWrapper {
         "props": Object {
           "children": "FAVE",
           "className": "fave-button",
+          "onClick": [Function],
         },
         "ref": null,
         "rendered": "FAVE",
@@ -165,6 +167,7 @@ ShallowWrapper {
         "children": Array [
           <button
             className="fave-button"
+            onClick={[Function]}
           >
             FAVE
           </button>,
@@ -195,6 +198,7 @@ ShallowWrapper {
           "props": Object {
             "children": "FAVE",
             "className": "fave-button",
+            "onClick": [Function],
           },
           "ref": null,
           "rendered": "FAVE",

@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+// import PropTypes from 'prop-types';
 import { addFavorite, removeFavorite } from '../../actions';
 import * as builders from '../../helpers/builders';
 
@@ -29,6 +30,13 @@ export function Card(props) {
     </div>
   )
 }
+
+// Card.propTypes = {
+//   faves: PropTypes.array.isRequired,
+//   addFavorite: PropTypes.func.isRequired,
+//   removeFavorite: PropTypes.func.isRequired,
+//   category: PropTypes.string.isRequired
+// };
 
 export const mapStateToProps = (state) => ({
   faves: state.faves

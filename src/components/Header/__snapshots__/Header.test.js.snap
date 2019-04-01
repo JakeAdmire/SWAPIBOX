@@ -40,6 +40,9 @@ ShallowWrapper {
             button="Vehicles"
             passEvent={[Function]}
           />
+          <button>
+            Faves(undefined)
+          </button>
         </div>,
       ],
     },
@@ -62,18 +65,23 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <Button
-              button="People"
-              passEvent={[Function]}
-            />,
-            <Button
-              button="Planets"
-              passEvent={[Function]}
-            />,
-            <Button
-              button="Vehicles"
-              passEvent={[Function]}
-            />,
+            Array [
+              <Button
+                button="People"
+                passEvent={[Function]}
+              />,
+              <Button
+                button="Planets"
+                passEvent={[Function]}
+              />,
+              <Button
+                button="Vehicles"
+                passEvent={[Function]}
+              />,
+            ],
+            <button>
+              Faves(undefined)
+            </button>,
           ],
           "className": "button-holder",
         },
@@ -115,6 +123,17 @@ ShallowWrapper {
             "rendered": null,
             "type": [Function],
           },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Faves(undefined)",
+            },
+            "ref": null,
+            "rendered": "Faves(undefined)",
+            "type": "button",
+          },
         ],
         "type": "div",
       },
@@ -146,6 +165,9 @@ ShallowWrapper {
               button="Vehicles"
               passEvent={[Function]}
             />
+            <button>
+              Faves(undefined)
+            </button>
           </div>,
         ],
       },
@@ -168,18 +190,23 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <Button
-                button="People"
-                passEvent={[Function]}
-              />,
-              <Button
-                button="Planets"
-                passEvent={[Function]}
-              />,
-              <Button
-                button="Vehicles"
-                passEvent={[Function]}
-              />,
+              Array [
+                <Button
+                  button="People"
+                  passEvent={[Function]}
+                />,
+                <Button
+                  button="Planets"
+                  passEvent={[Function]}
+                />,
+                <Button
+                  button="Vehicles"
+                  passEvent={[Function]}
+                />,
+              ],
+              <button>
+                Faves(undefined)
+              </button>,
             ],
             "className": "button-holder",
           },
@@ -221,6 +248,17 @@ ShallowWrapper {
               "rendered": null,
               "type": [Function],
             },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Faves(undefined)",
+              },
+              "ref": null,
+              "rendered": "Faves(undefined)",
+              "type": "button",
+            },
           ],
           "type": "div",
         },
@@ -251,5 +289,6 @@ ShallowWrapper {
       },
     },
   },
+  Symbol(enzyme.__childContext__): null,
 }
 `;

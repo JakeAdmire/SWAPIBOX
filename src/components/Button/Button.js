@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+// import PropTypes from 'prop-types';
 
 export function Button({button, passEvent}) {
 
@@ -11,3 +12,8 @@ export function Button({button, passEvent}) {
     </Link>
   )
 }
+
+// Button.propTypes = {
+//   button: PropTypes.string.isRequired,
+//   passEvent: PropTypes.func.isRequired
+// };
