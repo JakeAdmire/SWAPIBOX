@@ -7,8 +7,8 @@ import Header from '../../components/Header/Header';
 import { Main } from '../../components/Main/Main';
 
 export class App extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
       film: {},
       error: '',

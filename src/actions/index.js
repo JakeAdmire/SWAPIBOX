@@ -3,6 +3,11 @@ export const addFavorite = (film) => ({
   film
 })
 
+export const removeFavorite = (film) => ({
+  type: 'REMOVE_FAVORITE',
+  film
+})
+
 export const setCategory = (event) => ({
   type: 'SET_CATEGORY',
   event
