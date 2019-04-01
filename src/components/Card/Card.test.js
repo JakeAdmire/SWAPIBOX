@@ -9,8 +9,13 @@ describe('Card', () => {
 
   let wrapper;
 
+  let addFavorite = jest.fn();
+  let removeFavorite = jest.fn();
+
   let mockProps = {
     faves: [],
+    addFavorite,
+    removeFavorite,
     category: 'people'
   }
 
