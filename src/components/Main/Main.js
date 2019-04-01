@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
+// import PropTypes from 'prop-types';
 import { fetchHappens } from '../../helpers/fetch';
 import * as builders from '../../helpers/builders';
 
@@ -50,3 +50,9 @@ export class Main extends Component {
     )
   }
 }
+
+// Main.propTypes = {
+//   category: PropTypes.string.isRequired,
+//   changeState: PropTypes.func.isRequired,
+//   renderCards: PropTypes.bool.isRequired
+// };

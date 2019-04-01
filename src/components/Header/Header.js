@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
+// import PropTypes from 'prop-types';
 
 import { Button } from '../Button/Button';
 
@@ -35,6 +35,11 @@ export class Header extends Component {
     )
   }
 }
+
+// Header.propTypes = {
+//   faves: PropTypes.array.isRequired,
+//   changeState: PropTypes.func.isRequired,
+// };
 
 export const mapStateToProps = (state) => ({
   faves: state.faves

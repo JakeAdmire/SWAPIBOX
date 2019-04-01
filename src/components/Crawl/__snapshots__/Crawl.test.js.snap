@@ -25,14 +25,11 @@ ShallowWrapper {
       "children": Array [
         <textarea
           readOnly={true}
-          value="Once upon a time"
         />,
         <p>
           Movie1
         </p>,
-        <p>
-          3-28-2019
-        </p>,
+        <p />,
       ],
     },
     "ref": null,
@@ -43,7 +40,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "readOnly": true,
-          "value": "Once upon a time",
+          "value": undefined,
         },
         "ref": null,
         "rendered": null,
@@ -65,10 +62,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "3-28-2019",
+          "children": undefined,
         },
         "ref": null,
-        "rendered": "3-28-2019",
+        "rendered": null,
         "type": "p",
       },
     ],
@@ -83,14 +80,11 @@ ShallowWrapper {
         "children": Array [
           <textarea
             readOnly={true}
-            value="Once upon a time"
           />,
           <p>
             Movie1
           </p>,
-          <p>
-            3-28-2019
-          </p>,
+          <p />,
         ],
       },
       "ref": null,
@@ -101,7 +95,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "readOnly": true,
-            "value": "Once upon a time",
+            "value": undefined,
           },
           "ref": null,
           "rendered": null,
@@ -123,10 +117,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "3-28-2019",
+            "children": undefined,
           },
           "ref": null,
-          "rendered": "3-28-2019",
+          "rendered": null,
           "type": "p",
         },
       ],

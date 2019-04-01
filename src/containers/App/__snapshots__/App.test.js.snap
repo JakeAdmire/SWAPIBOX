@@ -28,12 +28,10 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Connect(Header) />,
-        <Crawl
-          crawl="Once upon a time"
-          date="3-28-2019"
-          title="Movie1"
+        <Connect(Header)
+          changeState={[Function]}
         />,
+        <Crawl />,
         <Route
           path="/:id"
           render={[Function]}
@@ -47,7 +45,10 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
-        "props": Object {},
+        "props": Object {
+          "changeCategory": undefined,
+          "changeState": [Function],
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -57,9 +58,9 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "crawl": "Once upon a time",
-          "date": "3-28-2019",
-          "title": "Movie1",
+          "opening_crawl": undefined,
+          "release_date": undefined,
+          "title": undefined,
         },
         "ref": null,
         "rendered": null,
@@ -87,12 +88,10 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Connect(Header) />,
-          <Crawl
-            crawl="Once upon a time"
-            date="3-28-2019"
-            title="Movie1"
+          <Connect(Header)
+            changeState={[Function]}
           />,
+          <Crawl />,
           <Route
             path="/:id"
             render={[Function]}
@@ -106,7 +105,10 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
-          "props": Object {},
+          "props": Object {
+            "changeCategory": undefined,
+            "changeState": [Function],
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],
@@ -116,9 +118,9 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "crawl": "Once upon a time",
-            "date": "3-28-2019",
-            "title": "Movie1",
+            "opening_crawl": undefined,
+            "release_date": undefined,
+            "title": undefined,
           },
           "ref": null,
           "rendered": null,
