@@ -1,16 +1,5 @@
 import { enzyme } from 'enzyme';
-import { chooseFilm, addFavorite, setCategory } from './';
-
-describe('chooseFilm', () => {
-
-  it('should return an object with type of "CHOOSE_FILM"', () => {
-    const films = [];
-    const expected = { type: 'CHOOSE_FILM', films};
-    const results = chooseFilm(films);
-    expect(results).toEqual(expected);
-  })
-
-})
+import { removeFavorite, addFavorite, setCategory } from './';
 
 describe('addFavorite', () => {
 
@@ -31,4 +20,15 @@ describe('setCategory', () => {
     const results = setCategory(event);
     expect(results).toEqual(expected);
   })
+})
+
+describe('removeFavorite', () => {
+
+  it('should return an object with the type of "REMOVE_FAVORITE"', () => {
+    const film = {};
+    const expected = { type: 'REMOVE_FAVORITE', film };
+    const results = removeFavorite(film);
+    expect(results).toEqual(expected);
+  })
+
 })

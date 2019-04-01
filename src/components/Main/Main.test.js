@@ -1,14 +1,18 @@
 import { enzyme, shallow } from 'enzyme';
 import React from 'react';
 
-import { Main, mapStateToProps } from './Main';
+import { Main } from './Main';
 import * as builders from '../../helpers/builders';
 
 describe('Main', () => {
 
   let wrapper;
+
+  let changeState = jest.fn();
   let mockProps = {
-    category: 'people'
+    category: 'people',
+    changeState,
+    renderCards: false
   }
   let fetchHappens = jest.fn();
 
@@ -64,19 +68,6 @@ describe('Main', () => {
     wrapper.instance().determineCards(mockResults);
     expect(wrapper.state('cards')).toEqual(['']);
 
-  })
-
-})
-
-describe('mapStateToProps', () => {
-
-  it('should return a category string as props', () => {
-    const mockState = {
-      category: 'people'
-    }
-
-    const results = mapStateToProps(mockState)
-    expect(results).toEqual(mockState)
   })
 
 })

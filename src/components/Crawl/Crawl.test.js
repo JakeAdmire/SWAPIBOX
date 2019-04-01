@@ -7,9 +7,9 @@ describe('Crawl', () => {
   let wrapper;
 
   let crawlContent = {
-    crawl: 'Once upon a time', 
+    opening_crawl: 'Once upon a time', 
     title: 'Movie1', 
-    date: '3-28-2019'
+    release_date: '3-28-2019'
   }
 
   wrapper = shallow(

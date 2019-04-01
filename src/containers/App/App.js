@@ -12,7 +12,7 @@ export class App extends Component {
     this.state = {
       film: {},
       error: '',
-      category: 'people',
+      category: 'people', // this should be in redux?
       renderCards: false
     };
   }

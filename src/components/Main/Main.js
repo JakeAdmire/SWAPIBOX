@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { fetchHappens } from '../../helpers/fetch';
 import * as builders from '../../helpers/builders';
 
@@ -14,7 +14,7 @@ export class Main extends Component {
     }
   }
 
-  test = async () => {
+  renderCards = async () => {
     let data = await this.fetchData();
     data.results && this.determineCards(data.results);
     data.message && this.setState({error: data.message});
@@ -38,7 +38,7 @@ export class Main extends Component {
 
   render() {
     const { cards, error } = this.state;
-    this.props.renderCards && this.test();
+    this.props.renderCards && this.renderCards();
     return (
       <div>
         {
@@ -51,8 +51,8 @@ export class Main extends Component {
   }
 }
 
-// Main.propTypes = {
-//   category: PropTypes.string.isRequired,
-//   changeState: PropTypes.func.isRequired,
-//   renderCards: PropTypes.bool.isRequired
-// };
+Main.propTypes = {
+  category: PropTypes.string.isRequired,
+  changeState: PropTypes.func.isRequired,
+  renderCards: PropTypes.bool.isRequired
+};

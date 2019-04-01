@@ -1,16 +1,16 @@
 import { enzyme, shallow } from 'enzyme';
 import React from 'react'
 
-import { Header, mapStateToProps, mapDispatchToProps } from './Header';
-import { setCategory } from '../../actions';
+import { Header, mapStateToProps } from './Header';
 
 describe('Header', () => {
 
   let wrapper;
-  let setCategory = jest.fn();
+  let faves = []
+  let changeState = jest.fn();
 
   wrapper = shallow(
-    <Header faves={0} setCategory={setCategory} />
+    <Header faves={faves} changeState={changeState} />
   )
 
   it('should match the snapshot', () => {
@@ -34,21 +34,6 @@ describe('mapStateToProps', () => {
 
     const results = mapStateToProps(mockState)
     expect(results).toEqual(mockState)
-  })
-
-})
-
-describe('mapDispatchToProps', () => {
-
-  it('should provide a method to dispatch an action creator', () => {
-    const mockCategory = 'people';
-    const mockDispatch = jest.fn();
-    const actionToDispatch = setCategory(mockCategory);
-    const mappedProps = mapDispatchToProps(mockDispatch);
-
-    mappedProps.setCategory(mockCategory);
-
-    expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch);
   })
 
 })
