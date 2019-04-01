@@ -29,5 +29,14 @@
   "devDependencies": {
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.11.2"
+  },
+  "jest": {
+   "collectCoverageFrom": [
+     "src/**/*.js",
+     "!src/reducers/index.js",
+     "!src/index.js",
+     "!src/setupTests.js",
+     "!src/serviceWorker.js"
+    ]
   }
 }
