@@ -14,7 +14,7 @@ export class Main extends Component {
     }
   }
 
-  componentDidMount = async () => {
+  test = async () => {
     let data = await this.fetchData();
     data.results && this.determineCards(data.results);
     data.message && this.setState({error: data.message});
@@ -29,19 +29,20 @@ export class Main extends Component {
 
   determineCards = async (results) => {
     const cat = this.props.category.toLowerCase();
-    console.log(cat);
     const cardArray = await Promise.all(
       results.map(result => builders[`${cat}Gatherer`](result))
     )
     this.setState({cards: cardArray});
+    this.props.changeState({renderCards: false});
   }
 
   render() {
-    const { cards, loading, error } = this.state;
+    const { cards, error } = this.state;
+    this.props.renderCards && this.test();
     return (
       <div>
         {
-          !cards.length ?
+          this.props.renderCards ?
             error ? <p>{error}</p> : <p>Loading...</p> :
             cards.map(card => <Card key={card.name} {...card}/>)
         }
@@ -49,9 +50,3 @@ export class Main extends Component {
     )
   }
 }
-
-export const mapStateToProps = (state) => ({
-  category: state.category
-})
-
-export default connect(mapStateToProps, null)(Main);

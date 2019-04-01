@@ -1,11 +1,11 @@
 import React from 'react';
 
-export function Crawl({crawl, title, date}) {
+export function Crawl({opening_crawl, title, release_date}) {
   return (
     <div>
-      <textarea readOnly value={crawl}></textarea>
+      <textarea readOnly value={opening_crawl}></textarea>
       <p>{title}</p>
-      <p>{date}</p>
+      <p>{release_date}</p>
     </div>
   )
 }

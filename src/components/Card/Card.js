@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { addFavorite, removeFavorite } from '../../actions';
 import * as builders from '../../helpers/builders';
 
 export function Card(props) {
@@ -8,12 +9,22 @@ export function Card(props) {
   let fave = 'fave-button';
 
   if (props.faves.includes(props.name)) {
-    console.log('favorite');
+    console.log('active');
+    fave = 'fave-button active';
+  }
+
+  const toggleFavorite = () => {
+    if (props.faves.includes(props.name)) {
+      props.removeFavorite(props.name)
+    } else {
+      props.addFavorite(props.name);
+    }
+    console.log('faves props:', props.faves);
   }
 
   return (
     <div>
-      <button className={fave}>FAVE</button>
+      <button onClick={toggleFavorite} className={fave}>FAVE</button>
       { card }
     </div>
   )
@@ -23,4 +34,9 @@ export const mapStateToProps = (state) => ({
   faves: state.faves
 })
 
-export default connect(mapStateToProps, null)(Card);
+export const mapDispatchToProps = (dispatch) => ({
+  addFavorite: (film) => dispatch(addFavorite(film)),
+  removeFavorite: (film) => dispatch(removeFavorite(film))
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(Card);

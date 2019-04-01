@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom';
 
 export function Button({button, passEvent}) {
 
+  let buttonText = button.toLowerCase();
+
   return (
-    <Link to={'/' + button.toLowerCase()}>
-      <button className={button.toLowerCase()} onClick={ passEvent }>{button}</button>
+    <Link to={'/' + buttonText}>
+      <button className={buttonText} onClick={ passEvent }>{button}</button>
     </Link>
   )
 }
