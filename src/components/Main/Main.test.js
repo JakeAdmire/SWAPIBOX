@@ -7,8 +7,12 @@ import * as builders from '../../helpers/builders';
 describe('Main', () => {
 
   let wrapper;
+
+  let changeState = jest.fn();
   let mockProps = {
-    category: 'people'
+    category: 'people',
+    changeState,
+    renderCards: false
   }
   let fetchHappens = jest.fn();
 
