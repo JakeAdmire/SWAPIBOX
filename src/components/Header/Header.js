@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 import { Button } from '../Button/Button';
 
@@ -36,10 +36,10 @@ export class Header extends Component {
   }
 }
 
-// Header.propTypes = {
-//   faves: PropTypes.array.isRequired,
-//   changeState: PropTypes.func.isRequired,
-// };
+Header.propTypes = {
+  faves: PropTypes.array.isRequired,
+  changeState: PropTypes.func.isRequired,
+};
 
 export const mapStateToProps = (state) => ({
   faves: state.faves

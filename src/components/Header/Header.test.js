@@ -6,10 +6,11 @@ import { Header, mapStateToProps } from './Header';
 describe('Header', () => {
 
   let wrapper;
-  let setCategory = jest.fn();
+  let faves = []
+  let changeState = jest.fn();
 
   wrapper = shallow(
-    <Header faves={0} setCategory={setCategory} />
+    <Header faves={faves} changeState={changeState} />
   )
 
   it('should match the snapshot', () => {
