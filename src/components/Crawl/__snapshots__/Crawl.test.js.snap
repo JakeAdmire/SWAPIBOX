@@ -4,8 +4,8 @@ exports[`Crawl should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Crawl
-    crawl="Once upon a time"
-    date="3-28-2019"
+    opening_crawl="Once upon a time"
+    release_date="3-28-2019"
     title="Movie1"
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -25,11 +25,14 @@ ShallowWrapper {
       "children": Array [
         <textarea
           readOnly={true}
+          value="Once upon a time"
         />,
         <p>
           Movie1
         </p>,
-        <p />,
+        <p>
+          3-28-2019
+        </p>,
       ],
     },
     "ref": null,
@@ -40,7 +43,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "readOnly": true,
-          "value": undefined,
+          "value": "Once upon a time",
         },
         "ref": null,
         "rendered": null,
@@ -62,10 +65,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": undefined,
+          "children": "3-28-2019",
         },
         "ref": null,
-        "rendered": null,
+        "rendered": "3-28-2019",
         "type": "p",
       },
     ],
@@ -80,11 +83,14 @@ ShallowWrapper {
         "children": Array [
           <textarea
             readOnly={true}
+            value="Once upon a time"
           />,
           <p>
             Movie1
           </p>,
-          <p />,
+          <p>
+            3-28-2019
+          </p>,
         ],
       },
       "ref": null,
@@ -95,7 +101,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "readOnly": true,
-            "value": undefined,
+            "value": "Once upon a time",
           },
           "ref": null,
           "rendered": null,
@@ -117,10 +123,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": undefined,
+            "children": "3-28-2019",
           },
           "ref": null,
-          "rendered": null,
+          "rendered": "3-28-2019",
           "type": "p",
         },
       ],
