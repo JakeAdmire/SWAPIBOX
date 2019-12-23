@@ -15,7 +15,6 @@
 ## Table of Contents
 
 - [About The Project](#About-The-Project)
-  - [Media](#Media)
   - [Built With](#Built-With)
 - [Getting Started](#Getting-Started)
   - [Prerequisites](#Prerequisites)
