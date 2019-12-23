@@ -1,31 +1,90 @@
-# SWAPIBOX
-SWAPIBOX is an application that allows you to browse through various pieces of data from the Star Wars API.
+###### Top
 
-You can learn more about the assignment spec by following [this link.](http://frontend.turing.io/projects/swapi-box.html)
+<br />
+<p align="center">
+  <h1 align="center">SWAPIBOX</h1>
+  <p align="center">
+    <i>Star Wars API Box</i> consumes the Star Wars API to display information about people, planets, and vehicles from various films!
+  </p>
+</p>
+<div align="center">
 
-### Contact Info
-Credit for the project goes to:
-- Jacob Admire: [GitHub](https://github.com/JakeAdmire), 
-                [Email](mailto:JakeAdmire1@gmail.com),
-                [LinkedIn](https://www.linkedin.com/in/jakeadmire)
+[![LinkedIn][linkedin-shield]][linkedin-url] [![Gmail][gmail-shield]][gmail-url] [![GitHub][github-shield]][github-url]
+</div>
 
-### Specific things learned:
-In this project I got a lot of practice learning where and when to implement Redux. I also got a lot of experience with propTypes and how they should be used
+## Table of Contents
 
-### Challenges faced:
-Finding enough time to complete the project was difficult. I wanted to start it completely from the beginning to practice my workflow and make sure I was building the application one iteration at a time. Because of this I had to entirely neglect any styling or design which was a big challenge for me.
+- [About The Project](#About-The-Project)
+  - [Media](#Media)
+  - [Built With](#Built-With)
+- [Getting Started](#Getting-Started)
+  - [Prerequisites](#Prerequisites)
+  - [Installation](#Installation)
+- [Assignment Details](#Assignment-Details)
 
-### Tools Used to Build Project
-[React](https://reactjs.org/)
-
-[Redux](https://redux.js.org/)
-
-[Enzyme](https://airbnb.io/enzyme/) & [Jest](https://airbnb.io/enzyme/docs/guides/jest.html)
-
-## Credits
-Credit for this project goes to [Jake Admire](https://github.com/JakeAdmire)
+## About The Project
+  
+:star: **SWAPIBOX** let's you explore information and details about your favorite Star Wars characters, planets, and vehicles!
 
 ---
-This project was assigned by Christie Lynam and David Whitaker 
 
-*@ Turing School of Software and Design, Denver, CO.*
+### Media:
+
+![full page screenshot](https://github.com/JakeAdmire/JA--Memoize/blob/master/src/screenshots/screenshot2.png?raw=true)
+
+### Built With:
+- HTML5
+- SCSS 
+- JavaScript
+- jQuery
+- Jest & Enzyme
+
+## Getting Started
+
+To get a local copy up and running follow these simple steps.
+
+---
+
+### Prerequisites
+
+* npm
+```sh
+npm install npm@latest -g
+```
+
+---
+
+### Installation
+
+1. Clone the repo
+```sh
+git clone https://github.com/JakeAdmire/SWAPIBOX
+```
+2. Install NPM packages
+```sh
+cd SWAPIBOX && npm install
+```
+
+## Assignment Details
+
+The intended assignment was to practice consuming and iterating through a massive API. 
+
+---
+
+This project was assigned by Christie Lynam and David Whitaker
+
+_@ Turing School of Software & Design, Denver, CO._
+
+---
+
+**[BACK TO TOP](#top)**
+
+<!-- URL References  -->
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-0077b5.svg?style=for-the-badge&logo=linkedin
+[linkedin-url]: https://linkedin.com/in/jakeadmire
+
+[gmail-shield]: https://img.shields.io/badge/-Email-red.svg?style=for-the-badge&logo=gmail&logoColor=white
+[gmail-url]: https://mailto:jakeadmire1@gmail.com
+
+[github-shield]: https://img.shields.io/badge/dynamic/json?label=Follow&query=length&url=https://api.github.com/users/jakeadmire/followers&style=for-the-badge&logo=github
+[github-url]: https://mailto:jakeadmire1@gmail.com
