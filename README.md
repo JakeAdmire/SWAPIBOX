@@ -28,10 +28,6 @@
 
 ---
 
-### Media:
-
-![full page screenshot](https://github.com/JakeAdmire/JA--Memoize/blob/master/src/screenshots/screenshot2.png?raw=true)
-
 ### Built With:
 - HTML5
 - SCSS 
